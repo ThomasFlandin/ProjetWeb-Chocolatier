@@ -21,7 +21,7 @@ header
     top: 0;
 }
 
-header > a > img
+header img
 {
     width: 180px;
     box-sizing: border-box;
@@ -70,4 +70,89 @@ header > div > a > svg
 .couleurLogoInstagram, .couleurLogoPinterest
 {
     fill:#dab76d;
+}
+
+@media screen and (max-width: 1200px) 
+{
+    header > nav
+    {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1040px)
+{
+    header > nav
+    {
+        width: 300px;
+        right: 10px;
+    }
+}
+
+@media screen and (max-width: 750px)
+{
+    /*header > nav, header > div
+    {
+        display: none;
+    }*/
+
+    header
+    {
+        height: 275px;
+        background-color: #514848;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2em;
+        transition: 0.5s;
+        position: fixed;
+        width: 100%;
+
+        justify-content: initial;
+    }
+
+    header > div
+    {
+        position: absolute;
+        left: 50px;
+        display: flex;
+        width: 75px;
+        justify-content: space-between;
+        top: 15px;
+    }
+
+    header > a > img
+    {
+        position: relative;
+        z-index: 10;
+    }
+
+    header a
+    {
+        text-decoration: none;
+        color: white;
+        transition: 0.5s;
+        position: relative;
+        top: 15px;
+    }
+
+    header > nav
+    {
+        flex-direction: column;
+        margin-top: 40px;
+        align-items: inherit;
+
+        width: initial;
+        position: relative;
+    }
+
+    header > nav > a
+    {
+        padding: 10px 5px 10px 5px;
+    }
+
+    header > div > a
+    {
+        display: none;
+    }
 }
