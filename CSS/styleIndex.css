@@ -60,7 +60,17 @@ header > div
     justify-content: space-between;
 }
 
-header > div > a > img
+header > div > a > svg
 {
     height: 30px;
+}
+
+.couleurLogoInstagram
+{
+    fill:#dab76d;
+}
+
+.couleurLogoInstagram:hover
+{
+    fill:white;
 }

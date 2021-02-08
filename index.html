@@ -10,8 +10,14 @@
     <body>
         <header>
             <div>
-                <a href="https://www.instagram.com/lindtfrance/"><img src="Images/Instagram.svg" alt="Logo instagram"></a>
-                <a href="https://www.pinterest.fr/lindtfrance/"><img src="Images/Pinterest.svg" alt="Logo Pinterest"></a>
+                <a href="https://www.instagram.com/lindtfrance/">
+                    <!-- Logo Instagram en .SVG pour le modifier en JS -->
+                    <svg id="logoInstagram" width="100%" height="100%" viewBox="0 0 3363 3368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M3362.02,956.554c-0,-527.933 -428.617,-956.554 -956.555,-956.554l-1448.91,0c-527.937,0 -956.554,428.621 -956.554,956.554l-0,1454.75c-0,527.937 428.617,956.554 956.554,956.554l1448.91,0c527.938,0 956.555,-428.616 956.555,-956.554l-0,-1454.75Zm-320.846,-23.621c-0,-337.512 -274.017,-611.533 -611.529,-611.533l-1497.27,0c-337.513,0 -611.529,274.021 -611.529,611.533l-0,1501.99c-0,337.512 274.016,611.533 611.529,611.533l1497.27,0c337.512,0 611.529,-274.021 611.529,-611.533l-0,-1501.99Z" class="couleurLogoInstagram"/><circle cx="2557.72" cy="807.217" r="227.363" class="couleurLogoInstagram"/><path d="M1681,807.217c483.871,-0 876.708,392.841 876.708,876.712c0,483.867 -392.837,876.709 -876.708,876.709c-483.871,-0 -876.708,-392.842 -876.708,-876.709c-0,-483.871 392.837,-876.712 876.708,-876.712Zm-0,306.433c314.746,0 570.275,255.533 570.275,570.279c-0,314.742 -255.529,570.275 -570.275,570.275c-314.746,0 -570.275,-255.533 -570.275,-570.275c-0,-314.746 255.529,-570.279 570.275,-570.279Z" class="couleurLogoInstagram"/></g></svg>
+                </a>
+
+                <a href="https://www.pinterest.fr/lindtfrance/">                    
+                    <img src="Images/Pinterest.svg" alt="Logo Pinterest">
+                </a>
             </div>
             <a href="index.html"><img src="Images/Logo_Lindt.png" alt="Logo Lindt (Maitre chocolatier Suisse depuis 1845)"></a>
             <nav>
@@ -20,5 +26,31 @@
                 <a href="">Nos ateliers</a>
             </nav>
         </header>
+
+        <script>
+
+            /*Variables qui permettent de modifier les paramètres du hover*/
+            var couleurLogoInstagramDeBase = "#dab76d";
+            var couleurLogoInstagramHover = "white";
+            var dureeTransition = "0.5s"
+
+            /*Création des gestionnaires d'évènements*/
+            var logoInsta = document.getElementById("logoInstagram");
+            var elementsColoresLogoInsta = document.getElementsByClassName("couleurLogoInstagram");
+
+            logoInsta.addEventListener('mouseover', function(){
+                for(var i=0; i < elementsColoresLogoInsta.length; i++ )
+                {
+                    elementsColoresLogoInsta[i].style = "fill:"+couleurLogoInstagramHover+";transition:"+dureeTransition+";";
+                }
+            });
+
+            logoInsta.addEventListener('mouseout', function(){
+                for(var i=0; i < elementsColoresLogoInsta.length; i++ )
+                {
+                    elementsColoresLogoInsta[i].style = "fill:"+couleurLogoInstagramDeBase+";transition:"+dureeTransition+";";
+                }
+            });
+        </script>
     </body>
 </html>
