@@ -66,6 +66,7 @@ header > div > a > svg
     height: 30px;
 }
 
+/* Nécessaire même si on controle la couleur des logos des réseaux sociaux en JS */
 .couleurLogoInstagram, .couleurLogoPinterest
 {
     fill:#dab76d;
