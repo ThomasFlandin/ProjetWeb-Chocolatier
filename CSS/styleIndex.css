@@ -65,12 +65,7 @@ header > div > a > svg
     height: 30px;
 }
 
-.couleurLogoInstagram
+.couleurLogoInstagram, .couleurLogoPinterest
 {
     fill:#dab76d;
-}
-
-.couleurLogoInstagram:hover
-{
-    fill:white;
 }
