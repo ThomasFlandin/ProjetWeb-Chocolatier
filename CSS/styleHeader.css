@@ -13,6 +13,12 @@ header
     justify-content: center;
 
     font-size: 1.2em;
+    transition: 0.5s;
+
+    position: fixed;
+    width: 100%;
+    margin: 0px;
+    top: 0;
 }
 
 header > a > img
@@ -24,11 +30,6 @@ header > a > img
 
 header > nav
 {
-    /*display: flex;
-    flex-direction: row;
-    align-content: space-between;*/
-
-
     right: 50px;
     position: absolute;
     display: flex;
