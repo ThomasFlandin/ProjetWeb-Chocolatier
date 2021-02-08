@@ -1,14 +1,17 @@
 # ProjetWeb-Chocolatier
 Site web réalisé par Thomas Flandin et Alexis Matile dans le cadre du projet de fin de module Développement Web
 
-
-Thomas Flandin
+Réalisé par
+Thomas Flandin et 
 Alexis Matile
 
 Le but de ce projet est de réaliser un site avec le maximum d’éléments vu en cours pour faire une synthèse de toutes nos compétences en développement web.
 Avant de se lancer dans ce projet nous avions différentes idées. J’avais l’intention de créer un site qui présente un produit, de préférence de luxe. Alors qu’Alexis avait plutôt l’intention de créer un site en rapport avec la nourriture.
 Nous avons donc choisi de faire le site d’un chocolatier car c’est un projet qui réunit nos 2 idées.
 En effet, le chocolat peut être un produit de luxe, ou du moins qui peut amener à faire un site web élégant. Mais il s’agit également de nourriture qui nous amènera à présenter de belles photos.
+
+
+L’objectif est de faire une page d’accueil en présentant la marque et les produits, une page d’achat, une page qui explique comment le chocolat est fabriqué et une page qui explique l’histoire de l’entreprise. On rajoutera de nouvelles pages au besoin mais voici la base sur laquelle nous souhaitons commencer.
 
 
 Le code :
