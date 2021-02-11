@@ -136,6 +136,7 @@ section:nth-of-type(3)
 :root
 {
     --position-selecteur-split: 50vw;   /* Au milieu de la largeur de l'écran*/
+    --marge-ecran-splite-droit:0px
 }
 
 #selecteurSplitJs img
@@ -160,6 +161,7 @@ section:nth-of-type(3)
 {
     width: 50%;
     height: 100%;
+    overflow-x:hidden;
 }
 
 #splitChocolatJsGauche
@@ -170,4 +172,17 @@ section:nth-of-type(3)
 #splitChocolatJsDroit
 {
     background-color: #462C20;
+}
+
+.contenuDivise
+{
+    /*  Les dimensions prennent toute la largeur de la fenêtre de manière à cacher une partie du div*/
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+}
+
+#margeSplitJs
+{
+    margin-left: var(--marge-ecran-splite-droit);
 }

@@ -34,6 +34,7 @@ function dragSplit(e)
         splitDroit.style.width = (100-pourcentagePositionSouris)+"%";
 
         root.style.setProperty('--position-selecteur-split', pourcentagePositionSouris + "vw");
+        root.style.setProperty('--marge-ecran-splite-droit', (50-pourcentagePositionSouris) + "vw");
     }
 }
 
