@@ -38,6 +38,8 @@ section:nth-of-type(1)
     min-height: 430px;
 }
 
+/*****************************************************/
+
 section:nth-of-type(2)
 {
     color:whitesmoke;
@@ -78,4 +80,95 @@ section:nth-of-type(2) > div
 section:nth-of-type(2) > div > div
 {
     margin: 10px 0px 10px 0px;
+}
+
+#commander
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+}
+
+#commander a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 20px;
+    font-weight: bold;
+
+    transition: 0.5s;
+}
+
+#commander a:hover
+{
+    transform: translateX(7px);
+    transition: 0.5s;
+}
+
+
+/*****************************************************/
+
+section:nth-of-type(3)
+{
+    height: 600px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#selecteurSplitJs
+{
+    width: 5px;
+    background-color: #DAB76D;
+    cursor: e-resize;
+}
+
+#selecteurSplitJs > div
+{
+    cursor: e-resize;
+    width: 100px;
+    height: 30px;
+    margin-left: -45px;
+    margin-top: 50vh;
+}
+
+
+:root
+{
+    --position-selecteur-split: 50vw;   /* Au milieu de la largeur de l'écran*/
+}
+
+#selecteurSplitJs img
+{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+#selecteurSplitJs img:first-of-type
+{
+    left: calc(var(--position-selecteur-split) - 45px);
+}
+
+#selecteurSplitJs img:last-of-type
+{
+    left: calc(var(--position-selecteur-split) + 5px);
+}
+
+
+#splitChocolatJsGauche, #splitChocolatJsDroit
+{
+    width: 50%;
+    height: 100%;
+}
+
+#splitChocolatJsGauche
+{
+    background-color: #6A4242;
+}
+
+#splitChocolatJsDroit
+{
+    background-color: #462C20;
 }
