@@ -1,0 +1,39 @@
+body
+{
+    font-family: 'garamond', serif;
+}
+
+section > video
+{
+    width: 100%;
+}
+
+section > div
+{
+    position: absolute;
+    text-align: center;
+
+    color: white;
+
+    /*justify-content: center;*/
+    top:150px;
+    width:100%;
+    z-index: 1;
+}
+
+h1
+{
+    font-size: 3.5rem;
+}
+
+h2
+{
+    font-size: 2rem;
+}
+
+section:nth-of-type(1)
+{
+    height: 90vh;
+    overflow-y: hidden;
+    min-height: 430px;
+}
