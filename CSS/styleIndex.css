@@ -126,7 +126,6 @@ section:nth-of-type(3)
 
 #selecteurSplitJs > div
 {
-    cursor: e-resize;
     width: 100px;
     height: 30px;
     margin-left: -45px;
