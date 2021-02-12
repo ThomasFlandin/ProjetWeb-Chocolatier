@@ -1,6 +1,18 @@
 body
 {
     font-family: 'garamond', serif;    
+    font-size: 0.7rem;
+    min-width: 340px;
+}
+
+header
+{
+    font-size: 1.3rem;
+}
+
+footer
+{
+    font-size: 1.1rem;
 }
 
 section > video
@@ -16,9 +28,14 @@ section:nth-of-type(1) > div
     color: white;
 
     /*justify-content: center;*/
-    top:175px;
+    top:125px;
     width:100%;
     z-index: 1;
+}
+
+section:nth-of-type(1) > div > h2
+{
+    display: none;
 }
 
 h1
@@ -34,7 +51,7 @@ h2
 section:nth-of-type(1)
 {
     overflow-y: hidden;
-    min-height: 430px;
+    margin-top: 85px;
 }
 
 /*************************   Section 2   ****************************/
@@ -56,14 +73,14 @@ section:nth-of-type(2)
 }
 section:nth-of-type(2) h3
 {
-    font-size: 2em;
+    font-size: 1.2em;
     margin: 25px 0px 25px 0px;
 }
 
 section:nth-of-type(2) > img
 {
-    height: 550px;
-    margin-left: 150px;
+    height: 350px;
+    margin-left: 25px;
 }
 
 section:nth-of-type(2) > div
@@ -95,6 +112,7 @@ section:nth-of-type(2) > div > div
     color: whitesmoke;
     margin-right: 20px;
     font-weight: bold;
+    font-size: 1.2em;
 
     transition: 0.5s;
 }
@@ -201,9 +219,15 @@ section:nth-of-type(3)
 
 .contenuDivise > h2
 {
-    width: 365px;
+    width: 250px;
     color: whitesmoke;
     font-size: 2.5em;
+}
+
+
+.contenuDivise img
+{
+    width: 200px;
 }
 
 #margeSplitJs
@@ -216,7 +240,7 @@ section:nth-of-type(3)
 
 section:last-of-type
 {
-    height: 1350px;
+    height: 800px;
     
     display: flex;
     flex-direction: column;
@@ -237,9 +261,7 @@ section:last-of-type > div:nth-child(2n)
 
 section:last-of-type > div:first-of-type > img
 {
-    width: 350px;
-
-    margin: 50px 0px 50px 0px;
+    display: none;
 }
 
 section:last-of-type > div > img + div
@@ -256,7 +278,7 @@ section:last-of-type > div > img + div
 
 section:last-of-type h2, section:last-of-type p, section:last-of-type a
 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: #462C20;
     transition: 0.5s;
 }
@@ -269,7 +291,7 @@ section:last-of-type a:hover
 
 section:last-of-type h2
 {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: normal;
 }
 
@@ -282,6 +304,5 @@ section:last-of-type p
 
 section:last-of-type > div:last-of-type > img
 {
-    height: 350px;
-    margin: 50px 0px 50px 0px;
+    display: none;
 }

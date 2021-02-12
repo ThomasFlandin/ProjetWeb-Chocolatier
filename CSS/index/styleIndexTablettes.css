@@ -1,6 +1,17 @@
 body
 {
     font-family: 'garamond', serif;    
+    font-size: 0.8rem;
+}
+
+header
+{
+    font-size: 1.2rem;
+}
+
+footer
+{
+    font-size: 1rem;
 }
 
 section > video
@@ -34,7 +45,7 @@ h2
 section:nth-of-type(1)
 {
     overflow-y: hidden;
-    min-height: 430px;
+    margin-top: 85px;
 }
 
 /*************************   Section 2   ****************************/
@@ -62,8 +73,8 @@ section:nth-of-type(2) h3
 
 section:nth-of-type(2) > img
 {
-    height: 550px;
-    margin-left: 150px;
+    height: 500px;
+    margin-left: 100px;
 }
 
 section:nth-of-type(2) > div
@@ -201,7 +212,7 @@ section:nth-of-type(3)
 
 .contenuDivise > h2
 {
-    width: 365px;
+    width: 290px;
     color: whitesmoke;
     font-size: 2.5em;
 }
@@ -237,9 +248,9 @@ section:last-of-type > div:nth-child(2n)
 
 section:last-of-type > div:first-of-type > img
 {
-    width: 350px;
+    width: 285px;
 
-    margin: 50px 0px 50px 0px;
+    margin: 50px 0px 50px 25px;
 }
 
 section:last-of-type > div > img + div
@@ -256,7 +267,7 @@ section:last-of-type > div > img + div
 
 section:last-of-type h2, section:last-of-type p, section:last-of-type a
 {
-    font-size: 1.5rem;
+    font-size: 1.5em;
     color: #462C20;
     transition: 0.5s;
 }
@@ -269,7 +280,7 @@ section:last-of-type a:hover
 
 section:last-of-type h2
 {
-    font-size: 3rem;
+    font-size: 3em;
     font-weight: normal;
 }
 
@@ -282,6 +293,6 @@ section:last-of-type p
 
 section:last-of-type > div:last-of-type > img
 {
-    height: 350px;
-    margin: 50px 0px 50px 0px;
+    height: 300px;
+    margin: 50px 25px 50px 0px;
 }
