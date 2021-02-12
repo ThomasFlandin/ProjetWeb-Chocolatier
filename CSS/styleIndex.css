@@ -200,11 +200,15 @@ section:nth-of-type(3)
 }
 
 
-/*************************   Section 4   ****************************/
+/*************************   Section 4 - div 1  ****************************/
 
 section:last-of-type
 {
-    height: 1500px;
+    height: 1350px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 section:last-of-type > div
@@ -212,6 +216,11 @@ section:last-of-type > div
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+section:last-of-type > div:nth-child(2n)
+{
+    flex-direction: row-reverse;
 }
 
 section:last-of-type > div:first-of-type > img
@@ -248,4 +257,12 @@ section:last-of-type h2
 section:last-of-type p
 {
     text-align: left;
+}
+
+/*************************   Section 4 - div 2  ****************************/
+
+section:last-of-type > div:last-of-type > img
+{
+    height: 350px;
+    margin: 50px 0px 50px 0px;
 }
