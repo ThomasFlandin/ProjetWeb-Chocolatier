@@ -1,0 +1,308 @@
+body
+{
+    font-family: 'garamond', serif;    
+    font-size: 0.7rem;
+    min-width: 340px;
+}
+
+header
+{
+    font-size: 1.3rem;
+}
+
+footer
+{
+    font-size: 1.1rem;
+}
+
+section > video
+{
+    width: 100%;
+}
+
+section:nth-of-type(1) > div
+{
+    position: absolute;
+    text-align: center;
+
+    color: white;
+
+    /*justify-content: center;*/
+    top:125px;
+    width:100%;
+    z-index: 1;
+}
+
+section:nth-of-type(1) > div > h2
+{
+    display: none;
+}
+
+h1
+{
+    font-size: 3.5rem;
+}
+
+h2
+{
+    font-size: 2rem;
+}
+
+section:nth-of-type(1)
+{
+    overflow-y: hidden;
+    margin-top: 85px;
+}
+
+/*************************   Section 2   ****************************/
+
+section:nth-of-type(2)
+{
+    color:whitesmoke;
+    height: 700px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background-image: linear-gradient(60deg,#D9C09C 25%, #5C4428);
+
+    font-size: 1em;
+    font-family: "Malgun Gothic", 'Arial', sans-serif;
+}
+section:nth-of-type(2) h3
+{
+    font-size: 1.2em;
+    margin: 25px 0px 25px 0px;
+}
+
+section:nth-of-type(2) > img
+{
+    height: 350px;
+    margin-left: 25px;
+}
+
+section:nth-of-type(2) > div
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 35%;
+    margin-right: 10%;
+}
+
+section:nth-of-type(2) > div > div
+{
+    margin: 10px 0px 10px 0px;
+}
+
+#commander
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: right;
+}
+
+#commander a
+{
+    text-decoration: none;
+    color: whitesmoke;
+    margin-right: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+
+    transition: 0.5s;
+}
+
+#commander a:hover
+{
+    transform: translateX(7px);
+    transition: 0.5s;
+}
+
+
+/*************************   Section 3   ****************************/
+
+section:nth-of-type(3)
+{
+    height: 600px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+#selecteurSplitJs
+{
+    width: 5px;
+    background-color: #DAB76D;
+    cursor: e-resize;
+}
+
+#selecteurSplitJs > div
+{
+    width: 100px;
+    height: 30px;
+    margin-left: -45px;
+    margin-top: 40vh;
+}
+
+
+:root
+{
+    --position-selecteur-split: 50vw;   /* Au milieu de la largeur de l'écran*/
+    --marge-ecran-splite-droit:0px
+}
+
+#selecteurSplitJs img
+{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+}
+
+#selecteurSplitJs img:first-of-type
+{
+    left: calc(var(--position-selecteur-split) - 45px);
+}
+
+#selecteurSplitJs img:last-of-type
+{
+    left: calc(var(--position-selecteur-split) + 5px);
+}
+
+
+#splitChocolatJsGauche, #splitChocolatJsDroit
+{
+    width: 50%;
+    height: 100%;
+    overflow-x:hidden;
+}
+
+#splitChocolatJsGauche
+{
+    background-color: #6A4242;
+}
+
+#splitChocolatJsDroit
+{
+    background-color: #462C20;
+}
+
+.contenuDivise
+{
+    /*  Les dimensions prennent toute la largeur de la fenêtre de manière à cacher une partie du div*/
+    width: 100vw;
+    height: 100%;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenuDivise a
+{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.contenuDivise a:hover
+{
+    color: #DAB76D;
+    transition: 0.5s;
+}
+
+.contenuDivise > h2
+{
+    width: 250px;
+    color: whitesmoke;
+    font-size: 2.5em;
+}
+
+
+.contenuDivise img
+{
+    width: 200px;
+}
+
+#margeSplitJs
+{
+    margin-left: calc(var(--marge-ecran-splite-droit) - 50vw);
+}
+
+
+/*************************   Section 4 - div 1  ****************************/
+
+section:last-of-type
+{
+    height: 800px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section:last-of-type > div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section:last-of-type > div:nth-child(2n)
+{
+    flex-direction: row-reverse;
+}
+
+section:last-of-type > div:first-of-type > img
+{
+    display: none;
+}
+
+section:last-of-type > div > img + div
+{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 350px;
+    justify-content: center;
+    text-align: center;
+
+    margin: 50px 50px 50px 50px;
+}
+
+section:last-of-type h2, section:last-of-type p, section:last-of-type a
+{
+    font-size: 1.5em;
+    color: #462C20;
+    transition: 0.5s;
+}
+
+section:last-of-type a:hover
+{
+    color: #DAB76D;
+    transition: 0.5s;
+}
+
+section:last-of-type h2
+{
+    font-size: 3em;
+    font-weight: normal;
+}
+
+section:last-of-type p
+{
+    text-align: left;
+}
+
+/*************************   Section 4 - div 2  ****************************/
+
+section:last-of-type > div:last-of-type > img
+{
+    display: none;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+
+        <title>Lindt - Boutique en ligne de chocolat de luxe</title>
+
+        <link rel="stylesheet" media="screen" href="CSS/styleHeader.css">
+        <link rel="stylesheet" media="screen and (min-width: 900px)" href="CSS/index/styleIndex.css">
+        <link rel="stylesheet" media="screen and (max-width: 900px) and (min-width: 750px)" href="CSS/index/styleIndexTablettes.css">
+        <link rel="stylesheet" media="screen and (max-width: 750px)" href="CSS/index/styleIndexTelephones.css">
+        <link rel="stylesheet" media="screen" href="CSS/styleFooter.css">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+
+    <body onresize="resizeWindows()">
+        <header>
+            <div>
+                <a href="https://www.instagram.com/lindtfrance/">
+                    <!-- Logo Instagram en .SVG pour le modifier en JS -->
+                    <svg id="logoInstagram" width="100%" height="100%" viewBox="0 0 3363 3368" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M3362.02,956.554c-0,-527.933 -428.617,-956.554 -956.555,-956.554l-1448.91,0c-527.937,0 -956.554,428.621 -956.554,956.554l-0,1454.75c-0,527.937 428.617,956.554 956.554,956.554l1448.91,0c527.938,0 956.555,-428.616 956.555,-956.554l-0,-1454.75Zm-320.846,-23.621c-0,-337.512 -274.017,-611.533 -611.529,-611.533l-1497.27,0c-337.513,0 -611.529,274.021 -611.529,611.533l-0,1501.99c-0,337.512 274.016,611.533 611.529,611.533l1497.27,0c337.512,0 611.529,-274.021 611.529,-611.533l-0,-1501.99Z" class="couleurLogoInstagram"/><circle cx="2557.72" cy="807.217" r="227.363" class="couleurLogoInstagram"/><path d="M1681,807.217c483.871,-0 876.708,392.841 876.708,876.712c0,483.867 -392.837,876.709 -876.708,876.709c-483.871,-0 -876.708,-392.842 -876.708,-876.709c-0,-483.871 392.837,-876.712 876.708,-876.712Zm-0,306.433c314.746,0 570.275,255.533 570.275,570.279c-0,314.742 -255.529,570.275 -570.275,570.275c-314.746,0 -570.275,-255.533 -570.275,-570.275c-0,-314.746 255.529,-570.279 570.275,-570.279Z" class="couleurLogoInstagram"/></g></svg>
+                </a>
+
+                <a href="https://www.pinterest.fr/lindtfrance/">
+                    <!-- Logo Pinterest en .SVG pour le modifier en JS -->
+                    <svg id="logoPinterest" width="100%" height="100%" viewBox="0 0 422 541" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><path d="M133.021,255.746l-28.019,93.143c0,-0 -27.296,111.643 -15.145,187.043c4.902,30.418 83.327,-107.639 79.016,-171.259c-1.959,-28.905 26.043,23.942 81.22,26.826c27.231,1.423 107.6,-0.983 154.481,-121.768c15.814,-40.742 24.215,-104.421 8.197,-147.107c-8.431,-22.47 -33.641,-96.413 -127.541,-114.587c-93.9,-18.174 -157.873,-6.082 -218.26,41.97c-71.806,57.139 -70.104,148.253 -64.652,177.938c5.452,29.684 20.784,74.848 71.765,81.407c21.337,2.746 17.276,-44.649 -5.67,-73.302c-6.348,-7.927 -12.24,-41.773 -3.091,-77.167c12.98,-50.216 78.755,-109.045 144.788,-111.469c66.033,-2.423 174.86,42.552 122.979,209.61c-5.853,18.845 -24.838,49.865 -51.198,65.048c-43.505,25.058 -106.765,17.67 -83.441,-61.112c17.059,-57.622 28.303,-85.537 28.303,-85.537c-0,-0 13.26,-65.238 -56.994,-60.048c-25.59,1.89 -42.576,39.392 -47.69,61.211c-5.815,24.814 5.429,65.136 5.429,65.136l5.523,14.024Z" class="couleurLogoPinterest"/></svg>
+                </a>
+            </div>
+            <a href="index.html"><img id="logoLindt" src="Images/Logo_Lindt.png" alt="Logo Lindt (Maitre chocolatier Suisse depuis 1845)"></a>
+            <nav>
+                <a href="boutique.html">Boutique</a>
+                <a href="histoire.html">Histoire</a>
+                <a href="ateliers.html">Nos ateliers</a>
+            </nav>
+        </header>
+
+        <section>
+            <video autoplay loop muted>
+                <source src="Videos/VideoBackground.mp4" type="video/mp4">
+            </video>
+
+            <div>
+                <h1>Lindt Champs Elysées</h1>
+                <h2>Depuis 1845</h2>
+            </div>
+        </section>
+
+        <section>
+            <img src="Images/Index/TabletteChocolatEntiere.jpg" alt="Photo d'une tablette de chocolat Lindt entière">
+            <div>
+                <div>
+                    <h3>Naturel</h3>
+                    <p>Nos chocolats sont 100 % naturels et sont cuisinés avec des produits issus de l'agriculture biologique.</p>
+                </div>
+
+                <div>
+                    <h3>Sans fruits à coques</h3>
+                    <p>Certains de nos chocolats* ne contiennet pas de fruits à coques ce qui permet aux personnes allergiques de pouvoir les manger.</p>
+                </div>
+
+                <div>
+                    <h3>Emballage personnalisable</h3>
+                    <p>Exceptionnellement pour la Saint Valentin, tous nos emballages sont personnalisables.</p>
+                </div>
+
+                <div id="commander">
+                    <a href="boutique.html">Commander ></a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div id="splitChocolatJsGauche">
+                <div class="contenuDivise">
+                    <img src="Images/Index/CarreauChocolatNoir.jpg" alt="Carreau de chocolat noir">
+                    <h2>Nos chocolats noirs</h2>
+                    <a href="boutique.html">Commander</a>
+                </div>
+            </div>
+
+            <div id="selecteurSplitJs">
+                <div>
+                    <img src="Images/Index/FlecheGauche.svg" alt="Fleche de gauche pour l'animation Js">
+                    <img src="Images/Index/FlecheDroite.svg" alt="Fleche de droite pour l'animation Js">
+                </div>
+            </div>
+
+            <div id="splitChocolatJsDroit">
+                <div class="contenuDivise" id="margeSplitJs">
+                    <img src="Images/Index/CarreauChocolatLait.jpeg" alt="Carreau de chocolat au lait">
+                    <h2>Nos chocolats au lait</h2>
+                    <a href="boutique.html">Commander</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div>
+                <img src="Images/Index/Chocolatier.jpg" alt="Photo d'un Chef chocolatier qui fait couler du chocolat fondu dans un grand saladier argenté.">
+                <div>
+                    <h2>Découvrez comment sont fabriqués nos chocolats</h2>
+                    <p>Derrière chaque chocolat Lindt se cache un maitre chocolatier, qui a confectionné le meilleur chocolat avec les meilleurs ingrédients possibles.</p>
+                    <a href="ateliers.html">Découvrir plus en détail comment sont fabriqués les chocolats.</a>
+                </div>
+            </div>
+            <div>
+                <img src="Images/Index/MiseEnSceneChocolat.jpg" alt="Photo d'une mise en scène de nos chocolats.">
+                <div>
+                    <h2>Découvrez l'histoire de l'entreprise</h2>
+                    <p>Vous souhaitez découvrir comment a été fondée l'entreprise et quelle a été son évolution depuis 1845 ?</p>
+                    <p>Vous êtes au bon endroit!</p>
+                    <a href="histoire.html">Découvrir l'histoire de Lindt</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <nav>
+                <h3>&copy; Lindt & spruengli 2021</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="ateliers.html">Nos ateliers</a></li>
+                    <li><a href="histoire.html">Notre histoire</a></li>
+                </ul>
+                <h4>Réalisé par Thomas Flandin et Alexis Matile</h4>
+            </nav>
+        </footer>
+
+        <script src="JS/hoverHeader.js"></script>
+        <script src="JS/animationHeader.js"></script>
+        <script src="JS/headerMenuMobiles.js"></script>
+        <script src="JS/splitIndex.js"></script>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="JS/animationIndex.js"></script>
+
+    </body>
+</html>

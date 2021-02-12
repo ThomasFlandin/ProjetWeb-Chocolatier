@@ -21,7 +21,7 @@ header.addEventListener("click", function ()
         if (style.display == "inherit") 
         {
             style.display = 'none';
-            header.style.height = "110px";
+            header.style.height = "88px";
         }
         else 
         {
@@ -43,7 +43,7 @@ function resizeWindows()
     if (window.matchMedia("(max-width: 750px)").matches) 
     {
         style.display = 'none';
-        header.style.height = "110px";
+        header.style.height = "88px";
     }
     else
     {

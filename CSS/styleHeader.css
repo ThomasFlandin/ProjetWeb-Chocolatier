@@ -19,6 +19,7 @@ header
     width: 100%;
     margin: 0px;
     top: 0;
+    z-index: 10;
 }
 
 header img
@@ -41,7 +42,7 @@ header > nav
 header a
 {
     text-decoration: none;
-    color: white;
+    color: whitesmoke;
     transition: 0.5s;
 }
 header a:hover
@@ -111,6 +112,11 @@ header > div > a > svg
         justify-content: initial;
     }
 
+    header img
+    {
+        width: 145px;
+    }
+
     header > div
     {
         position: absolute;
@@ -130,7 +136,7 @@ header > div > a > svg
     header a
     {
         text-decoration: none;
-        color: white;
+        color: whitesmoke;
         transition: 0.5s;
         position: relative;
         top: 15px;

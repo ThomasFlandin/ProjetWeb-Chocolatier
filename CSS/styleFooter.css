@@ -1,0 +1,50 @@
+footer
+{
+    height: 200px;
+    background-color: #514848;
+    text-align: center;
+    color: whitesmoke;
+    padding: 15px;
+
+    margin-top: 50px;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding: 0px;
+}
+
+footer a
+{
+    text-decoration: none;
+    font-size: 1.5em;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+footer a:hover
+{
+    color: #DAB76D;
+    transition: 0.5s;
+}
+
+footer li
+{
+    display: inline-block;
+    padding: 20px;
+}
+
+
+@media screen and (max-width: 750px)
+{
+    footer a
+    {
+        font-size: 1.3em;
+    }
+
+    footer
+    {
+        height: 250px;
+    }
+}
