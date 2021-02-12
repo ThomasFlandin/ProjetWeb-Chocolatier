@@ -4,17 +4,31 @@ var splitGauche = document.getElementById('splitChocolatJsGauche');
 var splitDroit = document.getElementById('splitChocolatJsDroit');
 let root = document.documentElement;
 
-selecteursplit.addEventListener('mousedown', dragMouseDown);
+selecteursplit.addEventListener('mousedown', dragMouseDown, {passive:false});
+selecteursplit.addEventListener('touchstart', dragMouseDown, {passive:false});
 
 function dragMouseDown(e)
 {
     e = e || window.event;
     e.preventDefault();
 
-    document.onmouseup = closeDragElement;
+    /*document.onmouseup = closeDragElement;
+    document.ontouchend = closeDragElement;*/
+
+    document.addEventListener("mouseup", closeDragElement);
+    document.addEventListener("touchend", closeDragElement);
     
     //lorsque le curseur bouge, on appel
-    document.onmousemove = dragSplit;
+    document.addEventListener("mousemove", dragSplit, {passive:false, cancelable:true});
+    document.addEventListener("touchmove", dragSplit, {passive:false, cancelable:true, once:false});
+
+    /*document.onmousemove = dragSplit;
+    document.ontouchmove = dragSplit;*/
+
+    if (e.cancelable) 
+    {
+        e.preventDefault();
+    }
 }
 
 
@@ -40,6 +54,15 @@ function dragSplit(e)
 
 function closeDragElement() {
     //Si on relache la souris, on arrête le drag
-    document.onmouseup = null;
+    /*document.onmouseup = null;
+    document.ontouchend = null;
+
     document.onmousemove = null;
+    document.ontouchmove = null;*/
+
+    document.removeEventListener("mouseup", closeDragElement);
+    document.removeEventListener("touchend", closeDragElement);
+
+    document.removeEventListener("mousemove", dragSplit);
+    document.removeEventListener("touchmove", dragSplit);
   }
