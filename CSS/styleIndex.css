@@ -180,9 +180,22 @@ section:nth-of-type(3)
     width: 100vw;
     height: 100%;
     overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenuDivise > h2
+{
+    width: 365px;
+    color: whitesmoke;
+    font-size: 2.5em;
 }
 
 #margeSplitJs
 {
-    margin-left: var(--marge-ecran-splite-droit);
+    margin-left: calc(var(--marge-ecran-splite-droit) - 50vw);
 }
+
