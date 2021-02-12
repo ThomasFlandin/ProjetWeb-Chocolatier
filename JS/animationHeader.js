@@ -6,16 +6,19 @@ const headerHauteurInitiale = "110";
 window.addEventListener("scroll", function(){
     var scroll = window.scrollY;
 
-    if(scroll > 10)
+    if (!window.matchMedia("(max-width: 750px)").matches)   // Si on est sur un écran de PC
     {
-        logoLindt.style.transform = "scale(0.8)";
-        header.style.height = headerHauteurInitiale*0.8+"px" ;
-        logoLindt.style.transition = "0.5s";
-    }
-    else
-    {
-        logoLindt.style.transform = "scale(1)";
-        header.style.height = headerHauteurInitiale+"px" ;
-        logoLindt.style.transition = "0.5s";
+        if(scroll > 10)
+        {
+            logoLindt.style.transform = "scale(0.8)";
+            header.style.height = headerHauteurInitiale*0.8+"px" ;
+            logoLindt.style.transition = "0.5s";
+        }
+        else
+        {
+            logoLindt.style.transform = "scale(1)";
+            header.style.height = headerHauteurInitiale+"px" ;
+            logoLindt.style.transition = "0.5s";
+        }
     }
 });

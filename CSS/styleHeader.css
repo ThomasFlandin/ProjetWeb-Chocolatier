@@ -112,6 +112,11 @@ header > div > a > svg
         justify-content: initial;
     }
 
+    header img
+    {
+        width: 145px;
+    }
+
     header > div
     {
         position: absolute;
