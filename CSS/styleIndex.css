@@ -187,6 +187,19 @@ section:nth-of-type(3)
     align-items: center;
 }
 
+.contenuDivise a
+{
+    font-size: 1.5rem;
+    color: whitesmoke;
+    transition: 0.5s;
+}
+
+.contenuDivise a:hover
+{
+    color: #DAB76D;
+    transition: 0.5s;
+}
+
 .contenuDivise > h2
 {
     width: 365px;
@@ -246,6 +259,13 @@ section:last-of-type h2, section:last-of-type p, section:last-of-type a
 {
     font-size: 1.5rem;
     color: #462C20;
+    transition: 0.5s;
+}
+
+section:last-of-type a:hover
+{
+    color: #DAB76D;
+    transition: 0.5s;
 }
 
 section:last-of-type h2
