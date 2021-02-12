@@ -36,6 +36,12 @@ L’objectif est de faire une page d’accueil en présentant la marque et les p
 -	Site web responsive.
 -	Pas de JS au départ puis amélioration par la suite.
 
+### Nommage des pages :
+-	template.html
+-	index.html
+-	boutique.html
+-	histoire.html
+-	ateliers.html
 
 
 
