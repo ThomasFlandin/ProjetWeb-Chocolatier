@@ -190,3 +190,22 @@ section:first-of-type fieldset
     background-color: #cca99a;
     transition: 0.5s;
 }
+
+/**************************************** Style du bouton commander  ***************************************************/
+
+section:first-of-type > div:last-of-type > div:last-of-type > button
+{
+    font-size: 1.3em;
+    color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 182px;
+    border:0px;
+    background-color: #693838;
+    cursor: pointer;
+}
+
+section:first-of-type > div:last-of-type > div:last-of-type > button:hover
+{
+    background-color: #4b2828;
+}
