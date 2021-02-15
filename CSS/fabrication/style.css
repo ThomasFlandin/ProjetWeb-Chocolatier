@@ -1,27 +1,28 @@
+/* Style des icônes */
 .parent > img{
-    /* width: 100px; */
     width: 5%;
     margin-top: 2%;
     margin-left: 5%;
     transition: 0.5s;
 }
 
+/* Style des titres */
 p:first-child{
     font-size: 2em;
 }
 
+/* Action au survol des icônes */
 div > img:hover {
     width: 6%;
     transition: 0.5s;
 }
 
+/* Texte à afficher après passage sur icônes */
 div.enfant{
     font-size: 1.3em;
     font-family: "garamond", serif;
-    /* display: none; */
     position: absolute;
     top: 16%;
-    /* margin-top: 10%; */
     margin-left: 11%;
     padding: 1%;
     color: white;
@@ -33,6 +34,7 @@ div.enfant{
     opacity: 0%;
 }
 
+/* Réglages des couleurs d'arrière plan pour chaque texte */
 #recolte{
     background-color: #3c8844;
 }
@@ -53,6 +55,7 @@ div.enfant{
     background-color: #573219;
 }
 
+/* Position et dimension de l'image d'arrière plan */
 link ~ img{
     position: absolute;
     top: 16%;
@@ -63,8 +66,14 @@ link ~ img{
     height: 79%;    
 }
 
+/* Style de la citation */
 .enfant q
 {
-    font-size: 2.5em;
+    font-size: 1.8em;
     font-family: 'Edwardian Script ITC', 'Lucida Calligraphy', 'Parchment', 'Vladimir Script', sans-serif;
+}
+
+/* Position des icônes */
+img + div{
+    padding-top: 6%;
 }
