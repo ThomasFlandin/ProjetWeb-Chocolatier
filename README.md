@@ -41,7 +41,7 @@ L’objectif est de faire une page d’accueil en présentant la marque et les p
 -	index.html
 -	boutique.html
 -	histoire.html
--	ateliers.html
+-	fabrication.html
 
 
 
