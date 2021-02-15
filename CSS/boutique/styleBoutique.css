@@ -181,4 +181,12 @@ section:first-of-type fieldset
     padding: 7px;
     border: solid 2px #462C20;
     background-color: #e2d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.selecteurQuantite:hover
+{
+    background-color: #cca99a;
+    transition: 0.5s;
 }
