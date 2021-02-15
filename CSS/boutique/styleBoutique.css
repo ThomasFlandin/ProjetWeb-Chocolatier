@@ -40,7 +40,9 @@ section:first-of-type > div:nth-of-type(2)
 {
     display: flex;
     flex-direction: column;
-    width: 400px;
+    width: 365px;
+    height: 515px;
+    box-sizing: border-box;
 
     padding: 20px;
 
@@ -48,8 +50,93 @@ section:first-of-type > div:nth-of-type(2)
     border-radius: 5px;
 }
 
+section:first-of-type > div:nth-of-type(2) h2
+{
+    font-size: 1.55em;
+}
+
+section:first-of-type > div:nth-of-type(2) h1
+{
+    font-size: 3.1em;
+    margin: 8px 0px 8px 0px;
+    font-family: 'Arial', sans-serif;
+    color: #A86A4D;
+}
+
+section:first-of-type > div:nth-of-type(2) p
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+}
+
+section:first-of-type > div:nth-of-type(2) > div:first-of-type
+{
+    overflow-y: auto;
+}
+
+section:first-of-type > div:nth-of-type(2) > p:last-of-type
+{
+    text-align: center;
+    color: #462C20;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: 0.5s;
+}
+
+section:first-of-type > div:nth-of-type(2) > p:last-of-type:hover
+{
+    transition: 0.5s;
+}
+
+section:first-of-type > div:nth-of-type(2) > p ~ div :first-child
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section:first-of-type > div:nth-of-type(2) > div:last-of-type
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+section:first-of-type > div:nth-of-type(2) > p ~ div :first-child img
+{
+    border: solid 1px #343434;
+    padding:5px 15px 5px 15px;
+    margin: 0px 5px 0px 5px;
+    transition: 0.5s;
+}
+section:first-of-type > div:nth-of-type(2) > p ~ div :first-child img:hover
+{
+    background-color: #A86A4D;
+    transition: 0.5s;
+    cursor: pointer;
+}
+Equivalent de:*/
+
 section:first-of-type > div:nth-of-type(2) img
 {
-    height: 70px;
+    border: solid 1px #343434;
+    padding:5px 15px 5px 15px;
+    margin: 0px 5px 0px 5px;
+    transition: 0.5s;
+
+    height: 60px;
     width: auto;
+}
+
+section:first-of-type > div:nth-of-type(2) img:hover
+{
+    background-color: #A86A4D;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+section:first-of-type input
+{
+    margin: 15px 0px 15px 0px;
 }
