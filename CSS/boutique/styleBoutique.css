@@ -136,20 +136,49 @@ section:first-of-type > div:nth-of-type(2) img:hover
     cursor: pointer;
 }
 
-section:first-of-type input
-{
-    margin: 15px 0px 15px 0px;
-
-}
+/***********************************************           Gestion du input             **************************************/
 
 /*Permet de masquer les petites flèche de l'input number*/
 input[type="number"]
 {
     -webkit-appearance: textfield;
-       -moz-appearance: textfield;
-            appearance: textfield;
+    -moz-appearance: textfield;
+    appearance: textfield;
+    height: 37px;
+    box-sizing: border-box;
+    color: #462C20;
+
+    padding: 0px 10px 0px 0px;
+    margin: 0px;
+    text-align: end;
+    border-top: solid 2px #462C20;
+    border-bottom: solid 2px #462C20;
+    background-color: #e2d9d5;
 }
 input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
 { 
     -webkit-appearance: none;
+}
+
+/*Permet de gérer le fieldset et de faire croire à l'utilisateur qu'il s'agit d'un unique champs html (au lieu de 3)*/
+section:first-of-type fieldset
+{
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 15px 0px 15px 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.selecteurQuantite
+{
+    width: 37px;
+    height: 37px;
+    box-sizing: border-box;
+    margin: 0px -1px 0px -1px;       /* Permet d'éviter un espace miniature entre les boutons (dû à la taille du texte)*/
+    padding: 7px;
+    border: solid 2px #462C20;
+    background-color: #e2d9d5;
 }

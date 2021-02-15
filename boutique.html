@@ -59,7 +59,11 @@
                         <img src="Images/Boutique/Listing/TabletteChocolatBlanc.jpg" alt="Miniature de sélection de la variante chocolat blanc.">
                         <img src="Images/Boutique/Listing/TabletteChocolatNoir.jpg" alt="Miniature de sélection de la variante chocolat noir.">
                     </div>
-                    <input type="number" name="quantite">
+                    <fieldset>
+                        <button type="button" title="Moins" class="selecteurQuantite" id="Moins">-</button>
+                        <input type="number" name="quantite" min="1" max="50">
+                        <button type="button" title="Plus" class="selecteurQuantite" id="Plus">+</button>
+                    </fieldset>
                     <button>Commander</button>
                 </div>
             </div>
