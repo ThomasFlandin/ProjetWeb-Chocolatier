@@ -16,7 +16,7 @@ div > img:hover {
 }
 
 div.enfant{
-    font-size: 1em;
+    font-size: 1.3em;
     font-family: "garamond", serif;
     /* display: none; */
     position: absolute;
@@ -32,12 +32,6 @@ div.enfant{
     transition: 0.6s;
     opacity: 0%;
 }
-
-/*
-div.parent:hover .enfant{
-    transition: 0.6s;
-    opacity: 100%;
-}*/
 
 #recolte{
     background-color: #3c8844;
@@ -67,4 +61,10 @@ link ~ img{
 
     width:83%;
     height: 79%;    
+}
+
+.enfant q
+{
+    font-size: 2.5em;
+    font-family: 'Edwardian Script ITC', 'Lucida Calligraphy', 'Parchment', 'Vladimir Script', sans-serif;
 }
