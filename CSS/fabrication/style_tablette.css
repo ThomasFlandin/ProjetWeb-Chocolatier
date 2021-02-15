@@ -19,16 +19,16 @@ div > img:hover {
 
 /* Texte à afficher après passage sur icônes */
 div.enfant{
-    font-size: 1.3em;
+    font-size: 1em;
     font-family: "garamond", serif;
     position: absolute;
-    top: 16%;
+    top: 27%;
     margin-left: 11%;
     padding: 1%;
     color: white;
 
     width:83%;
-    height: 75%;
+    height: 62%;
 
     transition: 0.6s;
     opacity: 0%;
@@ -58,11 +58,11 @@ div.enfant{
 /* Position et dimension de l'image d'arrière plan */
 header ~ img{
     position: absolute;
-    top: 16%;
+    top: 27%;
     margin-left: 11%;
 
     width:83%;
-    height: 79%;    
+    height: 65%;    
 }
 
 /* Style de la citation */
@@ -74,5 +74,5 @@ header ~ img{
 
 /* Position des icônes */
 img + div{
-    padding-top: 6%;
+    padding-top: 15%;
 }

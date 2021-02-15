@@ -1,9 +1,10 @@
 /* Style des icônes */
 .parent > img{
     width: 5%;
-    margin-top: 3%;
+    margin-top: 2%;
     margin-left: 5%;
     transition: 0.5s;
+    padding-top: 1%;
 }
 
 /* Style des titres */
@@ -56,10 +57,11 @@ div.enfant{
 }
 
 /* Position et dimension de l'image d'arrière plan */
-header ~ img{
+link ~ img{
     position: absolute;
     top: 16%;
     margin-left: 11%;
+
 
     width:83%;
     height: 79%;    
