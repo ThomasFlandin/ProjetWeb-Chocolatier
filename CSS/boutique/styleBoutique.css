@@ -28,12 +28,6 @@ section:first-of-type > div:first-of-type > div
     justify-content: space-around;
 }
 
-section:first-of-type > div:first-of-type > div > img
-{
-    width: 50px;
-    height: auto;
-}
-
 
 /*----------------------------      Rectangle d'achat       --------------------*/
 section:first-of-type > div:nth-of-type(2)
@@ -118,7 +112,7 @@ section:first-of-type > div:nth-of-type(2) > p ~ div :first-child img:hover
 }
 Equivalent de:*/
 
-section:first-of-type > div:nth-of-type(2) img
+section:first-of-type > div:nth-of-type(2) img, section:first-of-type > div:first-of-type > div > img
 {
     border: solid 1px #343434;
     padding:5px 15px 5px 15px;
@@ -129,7 +123,12 @@ section:first-of-type > div:nth-of-type(2) img
     width: auto;
 }
 
-section:first-of-type > div:nth-of-type(2) img:hover
+section:first-of-type > div:first-of-type > div > img
+{
+    margin: 15px 5px 15px 5px;
+}
+
+section:first-of-type > div:nth-of-type(2) img:hover, section:first-of-type > div:first-of-type > div > img:hover
 {
     background-color: #A86A4D;
     transition: 0.5s;
