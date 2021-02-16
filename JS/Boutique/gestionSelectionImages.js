@@ -31,8 +31,13 @@ if(type == null || type == "lait")
 {
     console.log("Hey, hey tu veux acheter du chocolat au lait");
 
+    //On change les images
     tableauImage = ['Images/Boutique/Listing/TabletteChocolatLait.jpg', 'Images/Boutique/Listing/TabletteListingLait.jpg', 'Images/Boutique/Listing/MiseEnSceneChocolat.jpg'];
+    
+    //On les applique sur les boutons
     miseAJoutBoutons(bouton, tripletPhotosChocolatLait);
+
+    //On change la photo qui est affichée
     affichageImage.setAttribute("src", tripletPhotosChocolatLait[0]);
 }
 else if(type == "noir")

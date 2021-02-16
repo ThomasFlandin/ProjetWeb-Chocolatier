@@ -8,6 +8,7 @@ section
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 section:first-of-type
@@ -25,7 +26,7 @@ section:first-of-type > div:first-of-type > div
 {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
