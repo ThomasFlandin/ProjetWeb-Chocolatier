@@ -26,6 +26,9 @@ tripletPhotosChocolatNoir = ['Images/Boutique/Listing/TabletteChocolatNoir.jpg',
 //On récupère l'élément qui affiche l'image sélectionnée
 affichageImage = document.getElementsByTagName('section')[0].getElementsByTagName('div')[0].getElementsByTagName('img')[0];
 
+//On récupère l'image zoomée
+zoom = document.getElementById("zoomImageJs").getElementsByTagName('img')[0];
+
 // On gère les différents cas des valeurs de 'type'
 if(type == null || type == "lait")
 {
@@ -39,6 +42,7 @@ if(type == null || type == "lait")
 
     //On change la photo qui est affichée
     affichageImage.setAttribute("src", tripletPhotosChocolatLait[0]);
+    zoom.setAttribute('src', tripletPhotosChocolatLait[0]);
 }
 else if(type == "noir")
 {
@@ -47,6 +51,7 @@ else if(type == "noir")
 
     miseAJoutBoutons(bouton, tripletPhotosChocolatNoir);
     affichageImage.setAttribute("src", tripletPhotosChocolatNoir[0]);
+    zoom.setAttribute('src', tripletPhotosChocolatNoir[0]);
 }
 else if(type == "blanc")
 {
@@ -55,6 +60,7 @@ else if(type == "blanc")
 
     miseAJoutBoutons(bouton, tripletPhotosChocolatBlanc);
     affichageImage.setAttribute("src", tripletPhotosChocolatBlanc[0]);
+    zoom.setAttribute('src', tripletPhotosChocolatBlanc[0]);
 }
 else
 {
@@ -102,7 +108,8 @@ function miseAJoutBoutons(tableauDeBoutons, tabImages)
         //On met à jour les évènements lors du clique sur les boutons
         tableauDeBoutons[i].addEventListener('click', function(){
             var i = this.getAttribute("id");
-            affichageImage.setAttribute('src', tableauImage[i]);
+            affichageImage.setAttribute('src', tableauImage[i]);        //On change l'image qui s'affiche
+            zoom.setAttribute('src', tableauImage[i]);                  // Et celle du zoom
 
         });
     }

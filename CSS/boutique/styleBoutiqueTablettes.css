@@ -256,3 +256,15 @@ section:last-of-type > div > div > img:hover
     transform: scale(1.1);
     transition: 0.7s;
 }
+
+/****************************************   Zoom image  ************************************/
+#zoomImageJs
+{
+    display: none;
+}
+
+#zoomImageJs > img
+{
+    position: absolute;
+    top: -50px;
+}
