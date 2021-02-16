@@ -32,6 +32,11 @@ section:first-of-type > div:first-of-type > div
     justify-content: center;
 }
 
+section:first-of-type > div > img:first-of-type
+{
+    min-height: 500px;
+    object-fit: contain;
+}
 
 /*----------------------------      Rectangle d'achat       --------------------*/
 section:first-of-type > div:nth-of-type(2)
