@@ -27,7 +27,7 @@ div.enfant{
     padding: 1%;
     color: white;
 
-    width:83%;
+    width:81%;
     height: 62%;
 
     transition: 0.6s;
@@ -60,6 +60,7 @@ header ~ img{
     position: absolute;
     top: 27%;
     margin-left: 11%;
+    object-fit: cover;
 
     width:83%;
     height: 65%;    

@@ -1,10 +1,9 @@
 /* Style des icônes */
 .parent > img{
-    width: 5%;
-    margin-top: 2%;
+    width: 10%;
+    margin-top: 10%;
     margin-left: 5%;
     transition: 0.5s;
-    padding-top: 1%;
 }
 
 /* Style des titres */
@@ -14,22 +13,22 @@ p:first-child{
 
 /* Action au survol des icônes */
 div > img:hover {
-    width: 6%;
+    width: 11%;
     transition: 0.5s;
 }
 
 /* Texte à afficher après passage sur icônes */
 div.enfant{
-    font-size: 1.3em;
+    font-size: 0.85em;
     font-family: "garamond", serif;
     position: absolute;
     top: 16%;
-    margin-left: 11%;
+    margin-left: 16%;
     padding: 1%;
     color: white;
 
-    width:83%;
-    height: 75%;
+    width:73%;
+    height: 69%;
 
     transition: 0.6s;
     opacity: 0%;
@@ -57,14 +56,14 @@ div.enfant{
 }
 
 /* Position et dimension de l'image d'arrière plan */
-link ~ img{
+header ~ img{
     position: absolute;
     top: 16%;
-    margin-left: 11%;
+    margin-left: 16%;
+    object-fit: cover;
 
-
-    width:83%;
-    height: 79%;    
+    width: 75%;
+    height: 70%;    
 }
 
 /* Style de la citation */
@@ -76,5 +75,5 @@ link ~ img{
 
 /* Position des icônes */
 img + div{
-    padding-top: 6%;
+    padding-top: 20%;
 }
