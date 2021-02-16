@@ -328,5 +328,5 @@ tbody td
     background-color: white;
     padding: 30px;
     border-radius: 3px;
-    
+    overflow-x: auto;    
 }

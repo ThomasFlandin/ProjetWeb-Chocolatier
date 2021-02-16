@@ -342,10 +342,11 @@ tbody td
 {
     background-color: white;
     padding: 30px;
-    border-radius: 3px;    
+    border-radius: 3px;  
+    overflow-x: auto;
 }
 
-.fraisPourPc
+.fraisPourPc    /* Ce style n'existe pas dans le css pour tablettes et téléphones*/
 {
     position: absolute;
     top: 130px;
