@@ -1,0 +1,355 @@
+html
+{
+    scroll-behavior:smooth;
+}
+
+section img
+{
+    width: 333px;
+}
+
+section
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section:first-of-type
+{
+    margin-top: 130px;
+}
+
+section:first-of-type > div:first-of-type
+{
+    display: flex;
+    flex-direction: column;
+}
+
+section:first-of-type > div:first-of-type > div
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section:first-of-type > div > img:first-of-type
+{
+    min-height: 500px;
+    object-fit: contain;
+}
+
+
+/*----------------------------      Rectangle d'achat       --------------------*/
+section:first-of-type > div:nth-of-type(2)
+{
+    display: flex;
+    flex-direction: column;
+    width: 365px;
+    height: 515px;
+    box-sizing: border-box;
+
+    padding: 20px;
+
+    box-shadow: 0 0px 5px 5px #CCCCCC;
+    border-radius: 5px;
+}
+
+section:first-of-type > div:nth-of-type(2) h2
+{
+    font-size: 1.55em;
+}
+
+section:first-of-type > div:nth-of-type(2) h1
+{
+    font-size: 3.1em;
+    margin: 8px 0px 8px 0px;
+    font-family: 'Arial', sans-serif;
+    color: #A86A4D;
+}
+
+section:first-of-type > div:nth-of-type(2) p
+{
+    font-family: 'Arial', sans-serif;
+    font-size: 0.9em;
+}
+
+section:first-of-type > div:nth-of-type(2) > div:first-of-type
+{
+    overflow-y: auto;
+}
+
+section:first-of-type > div:nth-of-type(2) > p:last-of-type
+{
+    text-align: center;
+    color: #462C20;
+    cursor: pointer;
+    font-size: 0.85em;
+    transition: 0.5s;
+}
+
+section:first-of-type > div:nth-of-type(2) > p:last-of-type:hover
+{
+    transition: 0.5s;
+}
+
+section:first-of-type > div:nth-of-type(2) > p ~ div :first-child
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+section:first-of-type > div:nth-of-type(2) > div:last-of-type
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+section:first-of-type > div:nth-of-type(2) > p ~ div :first-child img
+{
+    border: solid 1px #343434;
+    padding:5px 15px 5px 15px;
+    margin: 0px 5px 0px 5px;
+    transition: 0.5s;
+}
+section:first-of-type > div:nth-of-type(2) > p ~ div :first-child img:hover
+{
+    background-color: #A86A4D;
+    transition: 0.5s;
+    cursor: pointer;
+}
+Equivalent de:*/
+
+section:first-of-type > div:nth-of-type(2) img, section:first-of-type > div:first-of-type > div > img
+{
+    border: solid 1px #343434;
+    padding:5px 15px 5px 15px;
+    margin: 0px 5px 0px 5px;
+    transition: 0.5s;
+
+    height: 60px;
+    width: auto;
+}
+
+section:first-of-type > div:first-of-type > div > img
+{
+    margin: 15px 5px 15px 5px;
+}
+
+section:first-of-type > div:nth-of-type(2) img:hover, section:first-of-type > div:first-of-type > div > img:hover
+{
+    background-color: #A86A4D;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+/***********************************************           Gestion du input             **************************************/
+
+/*Permet de masquer les petites flèche de l'input number*/
+input[type="number"]
+{
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+    height: 37px;
+    box-sizing: border-box;
+    color: #462C20;
+
+    padding: 0px 10px 0px 0px;
+    margin: 0px;
+    width: 100px;
+    text-align: end;
+    border-top: solid 2px #462C20;
+    border-bottom: solid 2px #462C20;
+    background-color: #e2d9d5;
+}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button
+{ 
+    -webkit-appearance: none;
+}
+
+/*Permet de gérer le fieldset et de faire croire à l'utilisateur qu'il s'agit d'un unique champs html (au lieu de 3)*/
+section:first-of-type fieldset
+{
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    box-sizing: border-box;
+    margin: 15px 0px 15px 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.selecteurQuantite
+{
+    width: 37px;
+    height: 37px;
+    box-sizing: border-box;
+    margin: 0px -1px 0px -1px;       /* Permet d'éviter un espace miniature entre les boutons (dû à la taille du texte)*/
+    padding: 7px;
+    border: solid 2px #462C20;
+    background-color: #e2d9d5;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.selecteurQuantite:hover
+{
+    background-color: #cca99a;
+    transition: 0.5s;
+}
+
+/**************************************** Style du bouton commander  ***************************************************/
+
+section:first-of-type > div:last-of-type > div:last-of-type > button
+{
+    font-size: 1.3em;
+    color: white;
+    border-radius: 50px;
+    height: 50px;
+    width: 182px;
+    border:0px;
+    background-color: #693838;
+    cursor: pointer;
+}
+
+section:first-of-type > div:last-of-type > div:last-of-type > button:hover
+{
+    background-color: #4b2828;
+}
+
+/***********************************            Section 2           ******************************************/
+section:last-of-type
+{
+    height: max-content;
+    margin: 150px 0px 150px 0px;
+    color: #462C20;
+    flex-wrap: wrap;
+}
+
+
+section:last-of-type > div
+{
+    width: 315px;
+    height: 315px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section:last-of-type > div > div
+{
+    width: 265px;
+    height: 265px;
+}
+
+section:last-of-type > div > div > img
+{
+    width: 100%;
+    height: 100%;
+    max-width: 265px;
+    max-height: 265px;
+    object-fit: cover;
+    transition: 0.5s;
+    margin: 10px 0px 10px 0px;
+}
+
+section:last-of-type > div > div > img:hover
+{
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+
+/****************************************   Zoom image  ************************************/
+#zoomImageJs
+{
+    width: 500px;
+    height: 500px;
+
+    max-width: 500px;
+    max-height: 500px;
+    position: absolute;
+    top: 130px;
+    left: 35vw;
+    overflow: hidden;
+    z-index: 0;
+    background-color: white;
+
+    display: none;
+
+}
+
+#zoomImageJs > img
+{
+    position: absolute;
+    top: -50px;
+}
+
+
+
+
+/****************************************   Tableau Frais de livraison  ************************************/
+
+table
+{
+    font-family: 'Arial', sans-serif;
+    border-collapse: collapse;
+    font-size: 1em;
+    color: #1a1a1a;
+}
+
+th
+{
+    padding: 7px 50px 7px 50px;
+}
+
+tr > th:first-of-type
+{
+    padding-right: 80px;
+    padding-left: 0px;
+    text-align: left;
+}
+
+td, th
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+th
+{
+    border-bottom: 2px solid rgb(172, 172, 172);
+}
+
+tr
+{
+    border: 1px solid rgb(199, 199, 199);
+}
+
+tbody td
+{
+    border: 2px solid rgb(172, 172, 172);
+}
+
+#fraisLivraison
+{
+    background-color: white;
+    padding: 30px;
+    border-radius: 3px;  
+    overflow-x: auto;
+}
+
+.fraisPourPc    /* Ce style n'existe pas dans le css pour tablettes et téléphones*/
+{
+    position: absolute;
+    top: 130px;
+    left: 30px;
+    box-shadow: 0 0px 5px 5px #CCCCCC;
+}
