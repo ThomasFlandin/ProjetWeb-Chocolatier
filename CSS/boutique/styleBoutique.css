@@ -212,40 +212,40 @@ section:first-of-type > div:last-of-type > div:last-of-type > button:hover
 /***********************************            Section 2           ******************************************/
 section:last-of-type
 {
+    height: 500px;
+    margin-top: 150px;
+}
+
+
+section:last-of-type > div
+{
+    width: 315px;
+    height: 315px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
+}
+
+section:last-of-type > div > div
+{
+    width: 265px;
+    height: 265px;
+}
+
+section:last-of-type > div > div > img
+{
     width: 100%;
-    overflow-x: hidden;
-    margin-top: 50px;
-}
-
-section:last-of-type .conteneurImage
-{
-    max-height: 485px;
-    max-width: 780px;
-}
-
-section:last-of-type :first-of-type(img)
-{
-    margin: 0px 15px 0px 15px;
-}
-
-section:last-of-type > div:first-of-type
-{
-    width: 823px;
-}
-
-section:last-of-type > div:nth-of-type(2), section:last-of-type > div:nth-of-type(3)
-{
-    width: 333px;
-}
-
-section:last-of-type img
-{
+    height: 100%;
+    max-width: 265px;
+    max-height: 265px;
+    object-fit: cover;
     transition: 0.5s;
 }
 
-section:last-of-type img:hover
+section:last-of-type > div > div > img:hover
 {
-    transform: scale(1.03);
-    transition: 0.5s;
+    transform: scale(1.1);
+    transition: 0.7s;
 }
