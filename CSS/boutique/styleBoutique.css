@@ -142,13 +142,13 @@ input[type="number"]
 {
     -webkit-appearance: textfield;
     -moz-appearance: textfield;
-    appearance: textfield;
     height: 37px;
     box-sizing: border-box;
     color: #462C20;
 
     padding: 0px 10px 0px 0px;
     margin: 0px;
+    width: 100px;
     text-align: end;
     border-top: solid 2px #462C20;
     border-bottom: solid 2px #462C20;
@@ -214,6 +214,7 @@ section:last-of-type
 {
     height: 500px;
     margin-top: 150px;
+    color: #462C20;
 }
 
 
