@@ -1,3 +1,8 @@
+html
+{
+    scroll-behavior:smooth;
+}
+
 section img
 {
     height: auto;
@@ -272,4 +277,56 @@ section:last-of-type > div > div > img:hover
 {
     position: absolute;
     top: -50px;
+}
+
+/****************************************   Tableau Frais de livraison  ************************************/
+
+table
+{
+    font-family: 'Arial', sans-serif;
+    border-collapse: collapse;
+    font-size: 1em;
+    color: #1a1a1a;
+}
+
+th
+{
+    padding: 7px 50px 7px 50px;
+}
+
+tr > th:first-of-type
+{
+    padding-right: 80px;
+    padding-left: 0px;
+    text-align: left;
+}
+
+td, th
+{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+th
+{
+    border-bottom: 2px solid rgb(172, 172, 172);
+}
+
+tr
+{
+    border: 1px solid rgb(199, 199, 199);
+}
+
+tbody td
+{
+    border: 2px solid rgb(172, 172, 172);
+}
+
+#fraisLivraison
+{
+    background-color: white;
+    padding: 30px;
+    border-radius: 3px;
+    
 }
