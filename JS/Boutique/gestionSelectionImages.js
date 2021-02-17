@@ -29,6 +29,9 @@ affichageImage = document.getElementsByTagName('section')[0].getElementsByTagNam
 //On récupère l'image zoomée
 zoom = document.getElementById("zoomImageJs").getElementsByTagName('img')[0];
 
+//On récupère le titre et la description de l'annonce
+titre = document.getElementsByTagName('h2')[0];
+
 // On gère les différents cas des valeurs de 'type'
 if(type == null || type == "lait")
 {
@@ -43,6 +46,9 @@ if(type == null || type == "lait")
     //On change la photo qui est affichée
     affichageImage.setAttribute("src", tripletPhotosChocolatLait[0]);
     zoom.setAttribute('src', tripletPhotosChocolatLait[0]);
+
+    //On change le texte du titre
+    titre.innerText = "Tablette de chocolat au lait";
 }
 else if(type == "noir")
 {
@@ -52,6 +58,9 @@ else if(type == "noir")
     miseAJoutBoutons(bouton, tripletPhotosChocolatNoir);
     affichageImage.setAttribute("src", tripletPhotosChocolatNoir[0]);
     zoom.setAttribute('src', tripletPhotosChocolatNoir[0]);
+
+    //On change le texte du titre
+    titre.innerText = "Tablette de chocolat noir";
 }
 else if(type == "blanc")
 {
@@ -61,6 +70,9 @@ else if(type == "blanc")
     miseAJoutBoutons(bouton, tripletPhotosChocolatBlanc);
     affichageImage.setAttribute("src", tripletPhotosChocolatBlanc[0]);
     zoom.setAttribute('src', tripletPhotosChocolatBlanc[0]);
+
+    //On change le texte du titre
+    titre.innerText = "Tablette de chocolat blanc";
 }
 else
 {
