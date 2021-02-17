@@ -1,7 +1,9 @@
+/* Position du div générale*/
 header ~ div{
     margin-top: 5%;
 }
 
+/* Dimensions du div texte */
 .textes{
     width: 70%;
     height: 50%;
@@ -12,6 +14,7 @@ header ~ div{
 
 }
 
+/* Position et style du texte */
 div > p{
     margin-top: 10%;
     background-color: #6a4242;
@@ -20,11 +23,13 @@ div > p{
     padding-bottom: 15%;
 }
 
+/* Style des lien cliquables "info" */
 .info{
     color: rgb(255, 240, 193);
     text-decoration: none;
 }
 
+/* Changement de couleurs de fond du 2e div*/
 div:nth-of-type(2)>p{
     margin-top: 10%;
     background-color: #391d1d;
@@ -33,6 +38,7 @@ div:nth-of-type(2)>p{
     padding-bottom: 15%;
 }
 
+/* Changement de couleurs de fond du 4e div*/
 div:nth-of-type(4)>p{
     margin-top: 10%;
     background-color: #391d1d;
@@ -41,6 +47,7 @@ div:nth-of-type(4)>p{
     padding-bottom: 15%;
 }
 
+/* Style du titre */
 div > h2{
     margin-top: 10%;
     margin-left: 25%;
