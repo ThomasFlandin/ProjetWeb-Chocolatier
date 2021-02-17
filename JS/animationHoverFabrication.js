@@ -4,6 +4,7 @@ for(var i = 0 ; i < parents.length; i++)
 {
     var image = parents[i].getElementsByTagName("img")[0];
     image.addEventListener('mouseover', animationHover);
+	image.addEventListener('touchstart', animationHover);
 }
 
 
