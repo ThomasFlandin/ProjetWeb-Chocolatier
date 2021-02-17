@@ -34,6 +34,12 @@ div.enfant{
     opacity: 0%;
 }
 
+/*Ajout d'une scroll-bar si le texte est trop grans pour la page*/
+.parent > div
+{
+	overflow-y: auto;
+}
+
 /* Réglages des couleurs d'arrière plan pour chaque texte */
 #recolte{
     background-color: #3c8844;
