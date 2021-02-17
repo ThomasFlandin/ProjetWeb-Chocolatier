@@ -1,0 +1,85 @@
+/* Style des icônes */
+.parent > img{
+    width: 5%;
+    margin-top: 3%;
+    margin-left: 5%;
+    transition: 0.5s;
+}
+
+/* Style des titres */
+p:first-child{
+    font-size: 2em;
+}
+
+/* Action au survol des icônes */
+div > img:hover {
+    width: 6%;
+    transition: 0.5s;
+}
+
+/* Texte à afficher après passage sur icônes */
+div.enfant{
+    font-size: 1em;
+    font-family: "garamond", serif;
+    position: absolute;
+    top: 27%;
+    margin-left: 11%;
+    padding: 1%;
+    color: white;
+
+    width:81%;
+    height: 62%;
+
+    transition: 0.6s;
+    opacity: 0%;
+}
+
+/*Ajout d'une scroll-bar si le texte est trop grans pour la page*/
+.parent > div
+{
+	overflow-y: auto;
+}
+
+/* Réglages des couleurs d'arrière plan pour chaque texte */
+#recolte{
+    background-color: #3c8844;
+}
+
+#préparation{
+    background-color: #81b62a;
+}
+
+#transport{
+    background-color: #b69c2a;
+}
+
+#fabrication{
+    background-color: #b65d2a;
+}
+
+#vente{
+    background-color: #573219;
+}
+
+/* Position et dimension de l'image d'arrière plan */
+header ~ img{
+    position: absolute;
+    top: 27%;
+    margin-left: 11%;
+    object-fit: cover;
+
+    width:83%;
+    height: 65%;    
+}
+
+/* Style de la citation */
+.enfant q
+{
+    font-size: 1.8em;
+    font-family: 'Edwardian Script ITC', 'Lucida Calligraphy', 'Parchment', 'Vladimir Script', sans-serif;
+}
+
+/* Position des icônes */
+img + div{
+    padding-top: 15%;
+}
