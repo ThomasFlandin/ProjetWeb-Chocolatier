@@ -1,0 +1,18 @@
+header ~ div{
+    width: 50%;
+    height: 20%;
+    padding-left: 35%;
+    top: 30%;
+    padding-top: 3%;
+}
+
+p ~ p{
+    background-color: #6a4242;
+    padding: 2%;
+    color: white;
+}
+
+.info{
+    color: rgb(255, 240, 193);
+    text-decoration: none;
+}
