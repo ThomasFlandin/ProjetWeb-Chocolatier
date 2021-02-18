@@ -1,0 +1,108 @@
+/* Position du div générale*/
+header ~ div{
+    margin-top: 10%;
+
+}
+
+/* Dimensions du div texte */
+.textes{
+    position: absolute;
+    right: 2%;
+    width: 60%;
+    height: 42%;
+    /* padding-left: 25%; */
+    padding-top: 1%;
+    font-size: 0.85em;
+    font-family: "garamond", serif;
+}
+
+/* Position et style du texte */
+div > p{
+    margin-top: 10%;
+    background-color: #6a4242;
+    padding: 2%;
+    color: white;
+    padding-bottom: 8%;
+}
+
+/* Style des lien cliquables "info" */
+.info{
+    color: rgb(255, 240, 193);
+    text-decoration: none;
+}
+
+/* Changement de couleurs de fond du 2e div*/
+div:nth-of-type(2)>p{
+    margin-top: 10%;
+    background-color: #391d1d;
+    padding: 2%;
+    color: white;
+    padding-bottom: 8%;
+}
+
+/* Changement de couleurs de fond du 4e div*/
+div:nth-of-type(4)>p{
+    margin-top: 10%;
+    background-color: #391d1d;
+    padding: 2%;
+    color: white;
+    padding-bottom: 8%;
+}
+
+/* Style du titre */
+div > h2{
+    margin-top: 10%;
+    margin-left: 25%;
+    font-family: "Malgun Gothic", 'Arial', sans-serif;
+    font-size: 1em;
+}
+
+/* Position du div image */
+.image{
+    position: relative;;
+    left: 2%;
+    width: 30%;
+    height: 13%;
+    padding-top: 13%;
+
+}
+
+/* Animation Svg */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.animation
+{
+    opacity:0;
+    webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+
+    -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+}
+
+/* on rends les images transparentes */
+#groupe_1848, #groupe_1899, #groupe_1920, #groupe_2014, #Segment1, #Segment2, #Segment3, #_1848, #_1899, #_1920, #_2014
+{
+    opacity:0;
+    transition: 1s;
+}
+
+path{
+    fill:#010101;
+}
+circle{
+    fill:#010101;
+}
+g ~ path{
+    fill:none;
+    stroke:#010101;
+    stroke-width:18.64px;
+}
