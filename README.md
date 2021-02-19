@@ -15,7 +15,7 @@ En effet, le chocolat peut être un produit de luxe, ou du moins qui peut amener
 L’objectif est de faire une page d’accueil en présentant la marque et les produits, une page d’achat, une page qui explique comment le chocolat est fabriqué et une page qui explique l’histoire de l’entreprise. On rajoutera de nouvelles pages au besoin mais voici la base sur laquelle nous souhaitons commencer.
 
 ## Comment installer le projet sur son ordinateur?:
-[] 1. Télécharger et installer git (installation par défaut): https://git-scm.com/
+1. Télécharger et installer git (installation par défaut): https://git-scm.com/
 2. Allez sur votre disque dur à l'endroit où vous souhaitez ajouter le projet.
 3. En parallèle, ouvrez votre navigateur à la page suivante: https://github.com/ThomasFlandin/ProjetWeb-Chocolatier
 4. Puis cliquez sur "Code" (bouton vert au centre de l'écran)
