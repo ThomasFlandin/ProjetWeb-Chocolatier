@@ -1,7 +1,7 @@
 /* Position du div générale*/
 header ~ div{
-    margin-top: 5%;
-
+    margin-top: 130px;
+    margin-bottom: 250px;
 }
 
 /* Dimensions du div texte */
