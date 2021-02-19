@@ -16,24 +16,13 @@ header ~ div{
     font-family: "garamond", serif;
 }
 
-/* Position et style du texte */
-/*
-div > p{
-    margin-top: 10%;
-    background-color: #6a4242;
-    padding: 2%;
-    color: white;
-    padding-bottom: 12%;
-}
-*/
-
 /* Style des lien cliquables "info" */
 .info{
     color: rgb(255, 240, 193);
     text-decoration: none;
 }
 
-/* Changement de couleurs de fond du 2e div*/
+/* Position et style du texte (div impair)*/
 div:nth-child(odd)>p{
     margin-top: 10%;
     background-color: #6a4242;
@@ -42,7 +31,7 @@ div:nth-child(odd)>p{
     padding-bottom: 12%;
 }
 
-/* Changement de couleurs de fond du 4e div*/
+/* Changement de couleurs de fond (div pair)*/
 div:nth-child(even)>p{
     margin-top: 10%;
     background-color: #391d1d;
