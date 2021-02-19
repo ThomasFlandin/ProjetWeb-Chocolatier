@@ -14,7 +14,7 @@ En effet, le chocolat peut être un produit de luxe, ou du moins qui peut amener
 
 L’objectif est de faire une page d’accueil en présentant la marque et les produits, une page d’achat, une page qui explique comment le chocolat est fabriqué et une page qui explique l’histoire de l’entreprise. On rajoutera de nouvelles pages au besoin mais voici la base sur laquelle nous souhaitons commencer.
 
-## Comment installer le projet sur son ordinateur?:
+## Comment installer le projet sur mon ordinateur?
 1. Téléchargez et installez git (installation par défaut): https://git-scm.com/
 2. Allez sur votre disque dur à l'endroit où vous souhaitez ajouter le projet.
 3. En parallèle, ouvrez votre navigateur web, à la page suivante: https://github.com/ThomasFlandin/ProjetWeb-Chocolatier
@@ -24,8 +24,7 @@ L’objectif est de faire une page d’accueil en présentant la marque et les p
 7. Retournez dans l'explorateur de fichier
 8. Faites un clique droit n'importe où sur l'écran et cliquez sur `git bash here`
 9. Ecrivez: `git clone XXXXX` (Remplacez `XXXX` par l'url que vous avez copié précédemment), puis appuyez sur la touche "Entrer" de votre clavier
-10. Ecrivez ensuite: `git pull`
-11. Voilà, le projet est maintenant installé sur votre ordinateur. Il ne vous reste plus qu'à double-cliquer sur `index.tml` et de vous laisser guider par les pages web!
+10. Voilà, le projet est maintenant installé sur votre ordinateur. Il ne vous reste plus qu'à double-cliquer sur `index.tml` et de vous laisser guider par les pages web!
 
 
 ## Règles à repecter:
