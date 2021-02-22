@@ -24,7 +24,7 @@ L’objectif est de faire une page d’accueil en présentant la marque et les p
 7. Retournez dans l'explorateur de fichier
 8. Faites un clique droit n'importe où sur l'écran et cliquez sur `git bash here`
 9. Ecrivez: `git clone XXXXX` (Remplacez `XXXX` par l'url que vous avez copié précédemment), puis appuyez sur la touche "Entrer" de votre clavier
-10. Voilà, le projet est maintenant installé sur votre ordinateur. Il ne vous reste plus qu'à double-cliquer sur `index.tml` et de vous laisser guider par les pages web!
+10. Voilà, le projet est maintenant installé sur votre ordinateur. Il ne vous reste plus qu'à double-cliquer sur `index.html` et de vous laisser guider par les pages web!
 
 
 ## Règles à repecter:
