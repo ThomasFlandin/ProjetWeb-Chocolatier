@@ -75,3 +75,7 @@ git push = permet d'envoyer le 'colis' vers les serveurs web de github<br />
 ### Pour créer une nouvelle branche:<br/><br/>
 
 git checkout -b nom_nouvelle_branche<br/>
+
+## Informations complémentaires
+-	Entre 60h et 70h ont été nécessaires pour réaliser ce projet
+-	Nombre de lignes de code: 1718 lignes de HTML | 1476 lignes de CSS | 659 lignes de JS
